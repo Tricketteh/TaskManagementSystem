@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: TaskManagementSystem
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_management_db
+    username: user
+    password: pass
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+token:
+  signing:
+    # for security reasons there you should enter your own secret key
+    key: "enter your signing key"
